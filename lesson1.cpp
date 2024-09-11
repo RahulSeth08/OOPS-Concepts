@@ -11,11 +11,12 @@ public:
   string dept;
 
   // Setter
-  void SetSalary(double s){
+  void SetSalary(double s){ // Setter will take a double parameter
     salary = s;
   }
+
   // Getter
-  double GetSalary(){
+  double GetSalary(){  // Getter will return the value of salary
     return salary;
   }
 
@@ -39,5 +40,8 @@ int main() {
   T1.name = "Rahul Seth";
   T1.subject = "Python";
   T1.dept = "Computer Science";
+
+  T1.SetSalary(98000);  // Now we can access the private data member
+  cout<<T1.GetSalary()<<endl;
   cout<<T1.dept<<endl;
 }
