@@ -22,8 +22,9 @@ public:
     branch = "Mayur Vihar Ph-1";  // Set default value when we initalize object
   }
   // Constructor Overloading:
-  // We can have 
+  // We can have multiple constructors with different parameters
   // paramatized
+  // Also Constructor Overloading is example of Polymorphism
   Account(string br, string A, string User){
     branch = br;
     AccID = A;
@@ -42,7 +43,7 @@ Special method invoked automatically at time of object creation. Used for Initia
 • Only called once (automatically), at object creation
 • Memory allocation happens when constructor is called
 */
-int main(){
-  Account A1("Mayur Vihar Ph-1", "1101", "Rahul"); // Parameteized Constructor
-  return 0;
-}
+// int main(){
+//   Account A1("Mayur Vihar Ph-1", "1101", "Rahul"); // Parameteized Constructor
+//   return 0;
+// }
