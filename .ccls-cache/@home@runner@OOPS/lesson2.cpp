@@ -17,9 +17,19 @@ public:
   double getter(){
     return balance;
   }
-  Account(){
-    cout<<"Constructor Called"<<endl;
+  // non-paramatized 
+  Account(){    // Constructor
+    branch = "Mayur Vihar Ph-1";  // Set default value when we initalize object
   }
+  // Constructor Overloading:
+  // We can have 
+  // paramatized
+  Account(string br, string A, string User){
+    branch = br;
+    AccID = A;
+    UserName = User;
+  }
+  string branch;
   string AccID;
   string UserName;
   
@@ -33,10 +43,6 @@ Special method invoked automatically at time of object creation. Used for Initia
 • Memory allocation happens when constructor is called
 */
 int main(){
-  Account A1;
-  A1.AccID = "11001";
-  A1.UserName = "Rahul";
-  A1.setter(25000);
-  cout<<A1.getter()<<endl;
+  Account A1("Mayur Vihar Ph-1", "1101", "Rahul"); // Parameteized Constructor
   return 0;
 }
